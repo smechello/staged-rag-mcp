@@ -1,0 +1,321 @@
+================================================================================
+                     STAGED RAG MCP SERVER — PROJECT LICENSE
+================================================================================
+
+                  Copyright (c) 2026-present Shashidhar Reddy Nalamari
+                  Email: nalamarishashidharreddy@gmail.com
+
+                              All Rights Reserved.
+
+================================================================================
+
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+
+1. DEFINITIONS
+
+   "Software" refers to the Staged RAG MCP Server project, including all
+   source code, documentation, configuration files, scripts, tests, data
+   schemas, and any other files contained in this repository.
+
+   "Author" or "Original Author" refers to Shashidhar Reddy Nalamari, the
+   creator and copyright holder of this Software.
+
+   "You" (or "Your") refers to any individual or legal entity exercising
+   permissions granted by this License.
+
+   "Derivative Work" means any work, whether in source or compiled form,
+   that is based on (or derived from) the Software, including but not
+   limited to modifications, translations, adaptations, extensions, ports,
+   or any work that incorporates substantial portions of the Software.
+
+   "Contribution" means any work of authorship submitted to the Author for
+   inclusion in the Software, including modifications, additions, or
+   deletions, submitted via pull requests, patches, issues, emails, or
+   any other communication channel.
+
+   "Commercial Use" means use of the Software in any manner intended for
+   commercial advantage or monetary compensation, including but not limited
+   to use in products, services, SaaS platforms, consulting projects, or
+   any revenue-generating activities.
+
+
+2. GRANT OF LICENSE
+
+   Permission is hereby granted, free of charge, to any person obtaining a
+   copy of this Software and associated documentation files, to use, copy,
+   modify, merge, publish, distribute, and/or sublicense copies of the
+   Software, subject to ALL conditions and limitations stated in this
+   License.
+
+   This license grants You a worldwide, royalty-free, non-exclusive,
+   perpetual (subject to Section 8 — Termination) license to exercise
+   the rights granted herein.
+
+
+3. CONDITIONS AND RESTRICTIONS
+
+   The above copyright notice and this permission notice SHALL be included
+   in ALL copies or substantial portions of the Software.
+
+   a) ATTRIBUTION REQUIRED
+
+      Any use, distribution, or derivative work of this Software must
+      retain clear and visible attribution to the Original Author,
+      Shashidhar Reddy Nalamari, as the creator of this project.
+
+      Attribution must include, at minimum:
+        - The Original Author's full name: Shashidhar Reddy Nalamari
+        - A reference to the original project name: "Staged RAG MCP Server"
+        - A link to the original repository (where reasonably possible)
+
+      Attribution must be placed in a location that is reasonably
+      discoverable by users or developers of the Software or any
+      Derivative Work, such as:
+        - A LICENSE or NOTICE file in the root of the project
+        - A credits or acknowledgments section in documentation
+        - An "About" dialog or page in a user-facing application
+
+   b) NO FALSE CLAIMS OF OWNERSHIP
+
+      You may NOT claim this Software, in whole or in part, as Your own
+      original creation. You may NOT present this Software or any
+      Derivative Work as if You are the original author or creator.
+
+      This prohibition includes, but is not limited to:
+
+      i.   Removing, altering, or obscuring the Original Author's name,
+           copyright notice, or attribution in the source code,
+           documentation, or any distributed copies.
+
+      ii.  Representing the Software or a Derivative Work as solely Your
+           own creation in portfolios, resumes, CVs, academic submissions,
+           publications, social media, blog posts, presentations,
+           interviews, job applications, or any other public or private
+           context.
+
+      iii. Registering trademarks, patents, copyrights, or other
+           intellectual property protections on the Software or any
+           substantially similar Derivative Work without explicit prior
+           written consent from the Original Author.
+
+      iv.  Claiming credit for the original design, architecture, or
+           concept of the two-level staged retrieval system implemented
+           in this Software.
+
+      v.   Submitting the Software or substantial portions thereof as
+           original work for academic credit, certifications, coding
+           challenges, hackathons, or similar evaluations without proper
+           attribution.
+
+      vi.  Publishing the Software on package registries (PyPI, npm, etc.),
+           app stores, or software distribution platforms without clearly
+           attributing the Original Author in the package metadata and
+           documentation.
+
+   c) DERIVATIVE WORKS
+
+      You are free to create Derivative Works based on this Software,
+      provided that:
+
+      i.   You clearly and prominently indicate that Your work is derived
+           from or based on "Staged RAG MCP Server" by Shashidhar Reddy
+           Nalamari.
+
+      ii.  You include a link to the original repository or project page
+           where reasonably possible.
+
+      iii. You do not misrepresent the Derivative Work as the original
+           Software.
+
+      iv.  You clearly document what changes You have made relative to
+           the original Software.
+
+      v.   Derivative Works must be distributed under terms that are
+           compatible with this License and do not impose additional
+           restrictions on the rights granted herein for the original
+           portions of the Software.
+
+   d) COMMERCIAL USE
+
+      Commercial Use of this Software is permitted, provided that ALL
+      other conditions in this License are met. There is no fee or
+      royalty required for Commercial Use.
+
+      If You use this Software as part of a commercial product or service,
+      you must include proper attribution as described in Section 3(a).
+
+   e) NO ENDORSEMENT
+
+      The name of the Original Author, "Shashidhar Reddy Nalamari," and
+      the project name "Staged RAG MCP Server" may not be used to endorse
+      or promote products or services derived from this Software without
+      specific prior written permission from the Original Author.
+
+   f) REDISTRIBUTION
+
+      Redistribution of the Software, with or without modification, is
+      permitted provided that:
+
+      i.   You include a copy of this License with any redistribution.
+
+      ii.  You retain all copyright notices, attribution notices, and
+           disclaimers in the Software.
+
+      iii. If You redistribute in binary or compiled form, You must
+           include the above copyright notice, this License, and
+           attribution in the documentation and/or other materials
+           provided with the distribution.
+
+
+4. CONTRIBUTIONS
+
+   By submitting Contributions (pull requests, patches, issues, or other
+   modifications) to this project, You agree that:
+
+   a) Your Contributions are provided under the same terms as this License.
+
+   b) You grant the Original Author a perpetual, worldwide, non-exclusive,
+      irrevocable, royalty-free license to use, reproduce, modify, display,
+      perform, sublicense, and distribute Your Contributions as part of
+      this Software.
+
+   c) You represent and warrant that You have the legal right to submit
+      the Contribution and that it does not infringe on any third-party
+      rights, including but not limited to copyrights, patents,
+      trademarks, or trade secrets.
+
+   d) You understand that Your Contributions are voluntary and that no
+      employment or contractor relationship is created by Your
+      Contribution.
+
+
+5. THIRD-PARTY COMPONENTS
+
+   This Software may include or depend on third-party libraries and
+   components, each of which is subject to its own license terms. The
+   use of such components is governed by their respective licenses. The
+   Original Author makes no representations or warranties regarding
+   third-party components beyond what is stated in their respective
+   licenses.
+
+
+6. DISCLAIMER OF WARRANTY
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+   OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND
+   NONINFRINGEMENT.
+
+   IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+   CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+   TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+   SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+   THE AUTHOR DOES NOT WARRANT THAT:
+     - THE SOFTWARE WILL MEET YOUR REQUIREMENTS
+     - THE SOFTWARE WILL BE UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE
+     - THE RESULTS OBTAINED FROM USE OF THE SOFTWARE WILL BE ACCURATE
+       OR RELIABLE
+     - ANY ERRORS IN THE SOFTWARE WILL BE CORRECTED
+
+
+7. LIMITATION OF LIABILITY
+
+   IN NO EVENT SHALL THE ORIGINAL AUTHOR BE LIABLE FOR ANY DIRECT,
+   INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+   (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+   SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+   HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+   STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+   IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+   POSSIBILITY OF SUCH DAMAGE.
+
+   THE TOTAL LIABILITY OF THE ORIGINAL AUTHOR FOR ALL CLAIMS ARISING
+   OUT OF OR RELATED TO THIS LICENSE OR THE SOFTWARE SHALL NOT EXCEED
+   THE AMOUNT OF ZERO DOLLARS ($0.00 USD).
+
+
+8. TERMINATION
+
+   a) This License is effective until terminated.
+
+   b) Your rights under this License will terminate AUTOMATICALLY and
+      WITHOUT NOTICE if You fail to comply with any of its terms or
+      conditions, particularly the attribution and no-false-claims
+      provisions in Section 3.
+
+   c) Upon termination, You must:
+      i.   Immediately cease all use of the Software.
+      ii.  Destroy all copies of the Software in Your possession or
+           control.
+      iii. Remove any publicly distributed copies or Derivative Works
+           that violate this License.
+
+   d) Sections 1, 5, 6, 7, 9, and 10 shall survive any termination of
+      this License.
+
+
+9. GOVERNING LAW AND JURISDICTION
+
+   a) This License shall be governed by and construed in accordance with
+      the laws of India, without regard to its conflict of law provisions.
+
+   b) Any disputes arising under or in connection with this License shall
+      be subject to the exclusive jurisdiction of the courts located in
+      India.
+
+   c) If any provision of this License is held to be unenforceable or
+      invalid, that provision shall be modified to the minimum extent
+      necessary to make it enforceable, and the remaining provisions
+      shall continue in full force and effect.
+
+
+10. ENTIRE AGREEMENT
+
+    This License constitutes the entire agreement between the parties
+    with respect to the Software and supersedes all prior or
+    contemporaneous understandings regarding such subject matter.
+
+    No amendment to or modification of this License will be binding
+    unless in writing and signed by the Original Author.
+
+
+================================================================================
+                              SUMMARY (NON-BINDING)
+================================================================================
+
+  In plain language, this license means:
+
+  YES, you CAN:
+    - Use this software for free, for any purpose (personal or commercial)
+    - Modify the source code to fit your needs
+    - Distribute copies to others
+    - Create derivative works and projects based on this software
+    - Use it in your own products, services, or applications
+    - Use it for learning, teaching, or research
+
+  NO, you CANNOT:
+    - Claim this project as your own original creation
+    - Remove the author's name or copyright notices
+    - Present it in your portfolio/resume without attributing the author
+    - Register IP protections (patents, trademarks) on this software
+    - Submit it as your own work for academic credit or evaluations
+    - Sue the author if something goes wrong (no warranty)
+
+  You MUST:
+    - Keep the copyright notice and license in all copies
+    - Give clear credit to the original author
+    - Indicate changes if you create derivative works
+    - Include a link to the original project when possible
+
+  This summary is provided for convenience only and has no legal standing.
+  The full license text above is the authoritative version.
+
+================================================================================
+
+For questions, permissions, or licensing inquiries, contact:
+  Shashidhar Reddy Nalamari
+  Email: nalamarishashidharreddy@gmail.com
+
+================================================================================

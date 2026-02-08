@@ -1,0 +1,15 @@
+.env
+config.local.yaml
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+.envrc
+
+# Generated data artifacts
+/data
