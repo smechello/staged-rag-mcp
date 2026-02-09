@@ -275,22 +275,22 @@ The LLM (or user) inspects Level 1 results and decides which documents warrant f
 │  ┌────────────────────────────────────────────────────────────────────┐  │
 │  │                    server.py — Tool Registry                       │  │
 │  │                                                                    │  │
-│  │  ┌──────────────┐  ┌──────────────┐  ┌──────────────────────────┐ │  │
-│  │  │  Retrieval    │  │  Management  │  │  Observability           │ │  │
-│  │  │  Tools        │  │  Tools       │  │  Tools                   │ │  │
-│  │  │              │  │              │  │                          │ │  │
-│  │  │ search_      │  │ ingest_      │  │ collection_stats        │ │  │
-│  │  │  summaries   │  │  document    │  │ list_collections        │ │  │
-│  │  │ get_         │  │ ingest_batch │  │ explain_retrieval       │ │  │
-│  │  │  documents   │  │ update_      │  │ retrieval_log           │ │  │
-│  │  │ get_document │  │  document    │  │                          │ │  │
-│  │  │  _chunk      │  │ delete_      │  │                          │ │  │
-│  │  │ hybrid_      │  │  document    │  │                          │ │  │
-│  │  │  search      │  │              │  │                          │ │  │
-│  │  │ multi_query  │  │              │  │                          │ │  │
-│  │  │  _search     │  │              │  │                          │ │  │
-│  │  │ find_similar │  │              │  │                          │ │  │
-│  │  └──────────────┘  └──────────────┘  └──────────────────────────┘ │  │
+│  │  ┌──────────────┐  ┌──────────────┐  ┌──────────────────────────┐  │  │
+│  │  │  Retrieval   │  │  Management  │  │  Observability           │  │  │
+│  │  │  Tools       │  │  Tools       │  │  Tools                   │  │  │
+│  │  │              │  │              │  │                          │  │  │
+│  │  │ search_      │  │ ingest_      │  │ collection_stats         │  │  │
+│  │  │  summaries   │  │  document    │  │ list_collections         │  │  │
+│  │  │ get_         │  │ ingest_batch │  │ explain_retrieval        │  │  │
+│  │  │  documents   │  │ update_      │  │ retrieval_log            │  │  │
+│  │  │ get_document │  │  document    │  │                          │  │  │
+│  │  │  _chunk      │  │ delete_      │  │                          │  │  │
+│  │  │ hybrid_      │  │  document    │  │                          │  │  │
+│  │  │  search      │  │              │  │                          │  │  │
+│  │  │ multi_query  │  │              │  │                          │  │  │
+│  │  │  _search     │  │              │  │                          │  │  │
+│  │  │ find_similar │  │              │  │                          │  │  │
+│  │  └──────────────┘  └──────────────┘  └──────────────────────────┘  │  │
 │  └────────────────────────────────────────────────────────────────────┘  │
 └──────────────────────────┬───────────────────────────────────────────────┘
                            │
@@ -299,8 +299,8 @@ The LLM (or user) inspects Level 1 results and decides which documents warrant f
 │                      SERVICE LAYER (service.py)                          │
 │                                                                          │
 │  ┌────────────────┐  ┌────────────────┐  ┌────────────────────────────┐  │
-│  │ RAGService     │  │ KBManager      │  │ SummaryGenerator          │  │
-│  │ (Singleton)    │  │ (Singleton)    │  │ (Gemini / Local Fallback) │  │
+│  │ RAGService     │  │ KBManager      │  │ SummaryGenerator           │  │
+│  │ (Singleton)    │  │ (Singleton)    │  │ (Gemini / Local Fallback)  │  │
 │  └───────┬────────┘  └───────┬────────┘  └────────────────────────────┘  │
 │          │                   │                                           │
 └──────────┼───────────────────┼───────────────────────────────────────────┘
@@ -309,25 +309,25 @@ The LLM (or user) inspects Level 1 results and decides which documents warrant f
 ┌──────────────────────────────────────────────────────────────────────────┐
 │                         CORE LAYER                                       │
 │                                                                          │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  ┌─────────────┐  │
-│  │ DocumentStore │  │ VectorIndex  │  │ BM25Scorer   │  │ ChunkManager│  │
-│  │ (JSON)       │  │ (NumPy)      │  │ (rank-bm25)  │  │ (Sentence)  │  │
-│  └──────┬───────┘  └──────┬───────┘  └──────────────┘  └─────────────┘  │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  ┌─────────────┐   │
+│  │ DocumentStore│  │ VectorIndex  │  │ BM25Scorer   │  │ ChunkManager│   │
+│  │ (JSON)       │  │ (NumPy)      │  │ (rank-bm25)  │  │ (Sentence)  │   │
+│  └──────┬───────┘  └──────┬───────┘  └──────────────┘  └─────────────┘   │
 │         │                 │                                              │
 │  ┌──────┴─────────────────┴──────────────────────────────────────────┐   │
-│  │                    EmbeddingEngine                                 │   │
-│  │  ┌─────────┐ ┌────────┐ ┌────────┐ ┌────────────┐ ┌────────────┐ │   │
-│  │  │ Gemini  │ │ OpenAI │ │ Ollama │ │ HuggingFace│ │ Together   │ │   │
-│  │  └─────────┘ └────────┘ └────────┘ └────────────┘ └────────────┘ │   │
-│  │  ┌──────────────┐ ┌──────────┐ ┌──────────────────────────────┐  │   │
-│  │  │ Azure OpenAI │ │ LMStudio │ │ Deterministic Fallback       │  │   │
-│  │  └──────────────┘ └──────────┘ └──────────────────────────────┘  │   │
+│  │                    EmbeddingEngine                                │   │
+│  │  ┌─────────┐ ┌────────┐ ┌────────┐ ┌────────────┐ ┌────────────┐  │   │
+│  │  │ Gemini  │ │ OpenAI │ │ Ollama │ │ HuggingFace│ │ Together   │  │   │
+│  │  └─────────┘ └────────┘ └────────┘ └────────────┘ └────────────┘  │   │
+│  │  ┌──────────────┐ ┌──────────┐ ┌──────────────────────────────┐   │   │
+│  │  │ Azure OpenAI │ │ LMStudio │ │ Deterministic Fallback       │   │   │
+│  │  └──────────────┘ └──────────┘ └──────────────────────────────┘   │   │
 │  └───────────────────────────────────────────────────────────────────┘   │
 │                                                                          │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────────────────────┐   │
-│  │ FileWatcher  │  │ KBManifest   │  │ AuditLogger                 │   │
-│  │ (Polling)    │  │ (JSON)       │  │ (JSONL)                     │   │
-│  └──────────────┘  └──────────────┘  └──────────────────────────────┘   │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────────────────────┐    │
+│  │ FileWatcher  │  │ KBManifest   │  │ AuditLogger                  │    │
+│  │ (Polling)    │  │ (JSON)       │  │ (JSONL)                      │    │
+│  └──────────────┘  └──────────────┘  └──────────────────────────────┘    │
 │                                                                          │
 └──────────────────────────────────────────────────────────────────────────┘
            │                 │                            │
@@ -1748,9 +1748,9 @@ The Knowledge Base (KB) system provides automatic, folder-based document ingesti
                             │
                    ┌────────┴────────┐
                    │  Diff Engine    │    Compares with known state
-                   │  Created?      │    Created → ingest
-                   │  Modified?     │    Modified → re-ingest
-                   │  Deleted?      │    Deleted → remove
+                   │  Created?       │    Created → ingest
+                   │  Modified?      │    Modified → re-ingest
+                   │  Deleted?       │    Deleted → remove
                    └────────┬────────┘
                             │
                    ┌────────┴────────┐
